@@ -1,0 +1,144 @@
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body {
+	background-color: black;
+	font-family: "Poppins", sans-serif;
+}
+#landing {
+	background-color: black;
+}
+/*icons starting*/
+.icons {
+	padding-left: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.icons a {
+	padding: 10px;
+}
+.fa-solid {
+	font: 15px;
+}
+.instagram {
+	font-size: 26px;
+	display: inline-block;
+	background: #212431;
+	color: #fff;
+	line-height: 1;
+	padding: 10px 0;
+	border-radius: 50%;
+	text-align: center;
+	width: 45px;
+	height: 45px;
+	transition: 0.3s;
+}
+.github {
+	font-size: 26px;
+	display: inline-block;
+	background: #212431;
+	color: #fff;
+	line-height: 1;
+	padding: 10px 0;
+	border-radius: 50%;
+	text-align: center;
+	width: 45px;
+	height: 45px;
+	transition: 0.3s;
+}
+.linkdin {
+	font-size: 26px;
+	display: inline-block;
+	background: #212431;
+	color: #fff;
+	line-height: 1;
+	padding: 10px 5px;
+	border-radius: 50%;
+	text-align: center;
+	width: 45px;
+	height: 45px;
+	transition: 0.3s;
+}
+.instagram:hover {
+	color: white;
+	background-color: rgb(23, 92, 138);
+}
+.github:hover {
+	color: white;
+	background-color: rgb(23, 92, 138);
+}
+.linkdin:hover {
+	color: white;
+	background-color: rgb(23, 92, 138);
+}
+/* icons ending */
+/* heading */
+hr {
+	margin: 0;
+	color: inherit;
+	background-color: white;
+	border: 0;
+}
+#btn {
+	color: white;
+	margin-left: 120px;
+	background-color: #212431;
+}
+#btn:hover {
+	background-color: rgb(23, 92, 138);
+}
+.heading-landing {
+	font-size: 55px;
+	font-family: "DM Serif Display", serif;
+	margin: 0;
+	text-shadow: 2px 2px rgb(0, 0, 0);
+}
+.heading-landing2 {
+	font-family: "DM Serif Display", serif;
+	text-shadow: 2px 2px rgb(0, 0, 0);
+}
+/* about */
+#about {
+	background-color: #031524;
+}
+.about-container {
+	background-color: #100028;
+	border: 3px solid red;
+	padding: 30px;
+}
+#para-about {
+	margin-top: 50px;
+	margin-bottom: 45px;
+}
+#btn2 {
+	background-color: transparent;
+	color: white;
+}
+#btn2:hover {
+	outline: 2px solid #00bfe7;
+}
+#icon2 {
+	padding: 15px;
+	border: 2px solid #00bfe7;
+	font-size: 38px;
+	margin-bottom: 24px;
+}
+#icon3 {
+	margin-top: 40px;
+	padding: 15px;
+	border: 2px solid #00bfe7;
+	font-size: 38px;
+	margin-bottom: 24px;
+}
+#img-about {
+	margin-bottom: 24px;
+	height: 60%;
+	width: 80%;
+}
+.about-heading4 {
+	outline: #00bfe7;
+}
