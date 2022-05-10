@@ -2,12 +2,13 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
+
 body {
 	background-color: black;
 	font-family: "Poppins", sans-serif;
 }
 #landing {
-	background-image: url(/jr-korpa-9XngoIpxcEo-unsplash.jpg);
+	background-image: url(/pexels-matej-1074882.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -66,26 +67,71 @@ body {
 	height: 45px;
 	transition: 0.3s;
 }
+.html {
+	font-size: 26px;
+	display: inline-block;
+	background: #212431;
+	color: #fff;
+	line-height: 1;
+	padding: 10px 5px;
+	border-radius: 50%;
+	text-align: center;
+	width: 45px;
+	height: 45px;
+	transition: 0.3s;
+}
+.css {
+	font-size: 26px;
+	display: inline-block;
+	background: #212431;
+	color: #fff;
+	line-height: 1;
+	padding: 10px 5px;
+	border-radius: 50%;
+	text-align: center;
+	width: 45px;
+	height: 45px;
+	transition: 0.3s;
+}
+.bootstrap {
+	font-size: 26px;
+	display: inline-block;
+	background: #212431;
+	color: #fff;
+	line-height: 1;
+	padding: 10px 5px;
+	border-radius: 50%;
+	text-align: center;
+	width: 45px;
+	height: 45px;
+	transition: 0.3s;
+}
+.bootstrap:hover {
+	color: white;
+	background-color: red;
+}
+.css:hover {
+	color: white;
+	background-color: red;
+}
+.html:hover {
+	color: white;
+	background-color: red;
+}
 .instagram:hover {
 	color: white;
-	background-color: rgb(23, 92, 138);
+	background-color: red;
 }
 .github:hover {
 	color: white;
-	background-color: rgb(23, 92, 138);
+	background-color: red;
 }
 .linkdin:hover {
 	color: white;
-	background-color: rgb(23, 92, 138);
+	background-color: red;
 }
 /* icons ending */
 /* heading */
-hr {
-	margin: 0;
-	color: inherit;
-	background-color: white;
-	border: 0;
-}
 #btn {
 	color: white;
 	margin-left: 120px;
@@ -95,49 +141,83 @@ hr {
 	background-color: rgb(23, 92, 138);
 }
 .heading-landing {
-	font-size: 55px;
-	font-family: "DM Serif Display", serif;
+	text-align: center;
+	font-size: 53px;
+	font-family: "Roboto Flex", sans-serif;
 	margin: 0;
 	text-shadow: 2px 2px rgb(0, 0, 0);
 }
 .heading-landing2 {
-	font-family: "DM Serif Display", serif;
+	margin: none;
+	font-family: "Josefin Slab", serif;
+	text-align: center;
+	font-size: 34px;
 	text-shadow: 2px 2px rgb(0, 0, 0);
+}
+span {
+	padding-bottom: 3px solid red;
+	color: red;
 }
 /* about */
 #about {
-	background-color: #031524;
+	background-image: url(/pexels-gradienta-7130475.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	padding: 20px;
 }
 .about-container {
-	background-color: #100028;
-	border: 3px solid red;
+	height: 100%;
+	align-items: center;
+	width: 100%;
+	background-color: black;
+	border: 3px solid black;
 	padding: 30px;
 }
 #para-about {
 	margin-top: 50px;
 	margin-bottom: 45px;
 }
+.heading-about2 {
+	font-family: "Josefin Slab", serif;
+}
+#para-about {
+	font-family: "Josefin Slab", serif;
+	color: #adadad;
+	font-size: 22px;
+	line-height: 26px;
+	font-weight: 400;
+}
+.para-about2 {
+	font-family: "Josefin Slab", serif;
+	color: #adadad;
+	font-size: 22px;
+	line-height: 26px;
+	font-weight: 400;
+}
 #btn2 {
 	background-color: transparent;
 	color: white;
 }
 #btn2:hover {
-	outline: 2px solid #00bfe7;
+	outline: 2px solid red;
 }
+
 #icon2 {
+	border: 2px solid red;
 	padding: 15px;
-	border: 2px solid #00bfe7;
 	font-size: 38px;
 	margin-bottom: 24px;
 }
 #icon3 {
 	margin-top: 40px;
 	padding: 15px;
-	border: 2px solid #00bfe7;
+	border: 2px solid red;
 	font-size: 38px;
 	margin-bottom: 24px;
 }
 #img-about {
+	border: 3px solid red;
 	margin-bottom: 24px;
 	height: 60%;
 	width: 80%;
@@ -146,41 +226,136 @@ hr {
 	outline: #00bfe7;
 }
 /* skills */
-.skills-container{
-	background: #100028;
-    height: 840px;
-    padding-top: 380px;
-    overflow: hidden;
-	}
-.container-skills{
-	background: #1a083d;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    height: 255px;
-    width: 255px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    z-index: 1;
+.headings-skills-div {
+	position: relative;
+	top: -340px;
+	left: -56px;
 }
-.skills-item{
-		transform: rotate(-45deg);
-	
+.heading-skills {
+	color: white;
+	font-family: "Josefin Slab", serif;
 }
-.row3 {
-	padding: 80px;
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: flex-start;
-align-content: flex-start;
+#skills {
+	background-color: black;
+	height: 80vh;
+	padding-top: 380px;
+	overflow: hidden;
+}
+.skill-counter {
+	padding: 0px 50px;
+}
+.row-skill {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.skill-items {
+	color: white;
+	border: 5px solid red;
+	background-color: black;
+	transform: rotate(45deg);
+	height: 255px;
+	width: 255px;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	text-align: center;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+.skill-item-text {
+	padding: 5px;
+	transform: rotate(-45deg);
+}
+.skills-item-second {
+	color: white;
+	border: 5px solid red;
+	background-color: black;
+	margin-top: -185px;
+	transform: rotate(45deg);
+	height: 255px;
+	width: 255px;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	text-align: center;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+.skill-item-third {
+	color: white;
+	border: 5px solid red;
+	background-color: black;
+	transform: rotate(45deg);
+	height: 255px;
+	width: 255px;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+.skill-item-four {
+	color: white;
+	border: 5px solid red;
+	background-color: black;
+	margin-top: -185px;
+	transform: rotate(45deg);
+	height: 255px;
+	width: 255px;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	text-align: center;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+meter::-webkit-meter-optimum-value {
+	background: red;
+}
+/* projects */
+#projects {
+	background-image: url(/pexels-gradienta-7130560.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	padding: 20px;
+	margin: none;
+}
+#projects-container {
+	height: 100%;
+	align-items: center;
+	background-color: black;
+	border: 3px solid black;
+	padding: 30px;
+}
+.heading-projects {
+	font-family: "Josefin Slab", serif;
+}
+/* testimonials */
+#testimonials {
+	background-color: black;
+	padding: 30px;
+}
+/* contact */
+#contact {
+	background-image: url(/pexels-gradienta-6985047.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	padding: 20px;
+	margin: none;
 }

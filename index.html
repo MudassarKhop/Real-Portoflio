@@ -7,7 +7,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=DM+Serif+Display&family=Fjalla+One&family=Open+Sans:ital,wght@0,400;1,300&family=Playfair+Display&family=Poppins&family=Raleway:wght@300&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,100&family=Roboto+Flex:opsz,wght@8..144,500&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="style.css" />
@@ -21,6 +21,7 @@
 			src="https://kit.fontawesome.com/30f14fa587.js"
 			crossorigin="anonymous"
 		></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<title>Mudassar Khopatkar</title>
 	</head>
 	<body>
@@ -40,25 +41,38 @@
 				</div>
 			</ul>
 			<div
-				id="heading"
-				class="heading text-light position-absolute top-50 start-50 translate-middle"
+				class="container position-absolute top-50 start-0 translate-middle-y p-5"
 			>
-				<h1 class="heading-landing"><i>Mudassar Khopatkar</i></h1>
-				<h2 class="heading-landing2"><i>(*tough to pronounce*) pn.</i></h2>
-				<hr size="8" width="130%" color="white" />
-				<p>1. Paradoxical human, with simple aspirations</p>
-				<p>2.</p>
-				<p>3.</p>
-				<button type="button" id="btn" class="btn btn-lg">FIND OUT MORE</button>
+				<div class="row">
+					<div
+						data-aos="fade-down"
+						data-aos-easing="linear"
+						data-aos-duration="1500"
+						class="col-lg-8"
+					>
+						<div id="heading" class="heading text-light">
+							<h3 class="heading-landing2 m-0"><i>Welcome, I Am</i></h3>
+							<h1 class="heading-landing"><i>Mudassar Khopatkar</i></h1>
+							<h3 class="heading-landing2">
+								An Aspiring <span>Web-Developer</span>
+							</h3>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<!-- landing page ending -->
 		<section id="about" class="about vh-80">
 			<div class="about-container">
 				<div class="row">
-					<div class="col-md-4 text-light width-30%">
-						<h4>past, present</h4>
-						<h1 #heading-about>ABOUT ME</h1>
+					<div
+						data-aos="fade-down-right"
+						data-aos-easing="linear"
+						data-aos-duration="1000"
+						class="col-md-4 text-light width-30%"
+					>
+						<h4 class="heading-about2">past, present</h4>
+						<h1 #heading-about><span>ABOUT ME</span></h1>
 						<hr size="6" width="10%" color="red" />
 						<p id="para-about">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
@@ -66,12 +80,27 @@
 							soluta eligendi molestias quia illum odit aspernatur voluptate,
 							cupiditate sequi repellendus veritatis asperiores tempore!
 						</p>
-						<button type="button" id="btn2" class="btn btn-lg bg-transparent">
-							FIND OUT MORE
-						</button>
+						<a href="#skills"
+							><button
+								data-aos="fade-down-right"
+								data-aos-easing="linear"
+								data-aos-duration="1000"
+								type="button"
+								id="btn2"
+								class="btn btn-lg bg-transparent"
+							>
+								LEARN MORE
+							</button></a
+						>
 					</div>
-					<div class="col-md-4 text-light width-30%">
+					<div
+						data-aos="fade-down"
+						data-aos-easing="linear"
+						data-aos-duration="1000"
+						class="col-md-4 text-light width-30%"
+					>
 						<i id="icon2" class="fa-solid fa-briefcase"></i>
+
 						<h3 class="about-heading3">Work Experience</h3>
 						<p class="para-about2">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni
@@ -101,24 +130,170 @@
 				</div>
 			</div>
 		</section>
-		<section id="skills" class="skills vh-100" >
-			<div class="skills-container">
-				<div class="row3">
-                 <div class="col-lg-3 col-md-6 col-sm-6">
-					 <div class="container-skills">
-						 <div class="skills-item">
-							<i class="fa-solid fa-graduation-cap"></i>
-							<h1>pppp</h1>
-							<p>boom</p>
-						 </div>
-					 </div>
-
-				 </div>
+		<section id="skills" class="skills">
+			<div class="container">
+				<div class="headings-skills-div position-relative">
+					<h4 class="heading-skills">My Ability</h4>
+					<h1 #heading-about><span>SKILLS</span></h1>
+				</div>
+				<div class="skill-counter">
+					<div class="row-skill">
+						<div
+							data-aos="flip-left"
+							data-aos-easing="linear"
+							data-aos-duration="1500"
+							class="col-lg-3 col-md-6 col-sm-6"
+						>
+							<div class="skill-items">
+								<div class="skill-item-text">
+									<a href="#" class="html"
+										><i class="fa-brands fa-html5"></i
+									></a>
+									<h2>HTML</h2>
+									<p>80%</p>
+									<meter
+										value="8"
+										min="0"
+										max="10"
+										style="width: 100%; height: 20px"
+									>
+										8 out of 10
+									</meter>
+								</div>
+							</div>
+						</div>
+						<div
+							data-aos="flip-right"
+							data-aos-easing="linear"
+							data-aos-duration="1500"
+							class="col-lg-3 col-md-6 col-sm-6"
+						>
+							<div class="skills-item-second">
+								<div class="skill-item-text">
+									<a href="#" class="css"><i class="fa-brands fa-css3"></i></a>
+									<h2>CSS</h2>
+									<p>80%</p>
+									<meter
+										value="8"
+										min="0"
+										max="10"
+										style="width: 100%; height: 20px"
+									>
+										8 out of 10
+									</meter>
+								</div>
+							</div>
+						</div>
+						<div
+							data-aos="flip-left"
+							data-aos-easing="linear"
+							data-aos-duration="1500"
+							class="col-lg-3 col-md-6 col-sm-6"
+						>
+							<div class="skill-item-third">
+								<div class="skill-item-text">
+									<a href="#" class="bootstrap"
+										><i class="fa-brands fa-bootstrap"></i
+									></a>
+									<h2>Bootstrap</h2>
+									<p>70%</p>
+									<meter
+										value="7"
+										min="0"
+										max="10"
+										style="width: 100%; height: 20px"
+									>
+										7 out of 10
+									</meter>
+								</div>
+							</div>
+						</div>
+						<div
+							data-aos="flip-right"
+							data-aos-easing="linear"
+							data-aos-duration="1500"
+							class="col-lg-3 col-md-6 col-sm-6"
+						>
+							<div class="skill-item-four">
+								<div class="skill-item-text">
+									<a href="#" class="github"
+										><i class="fa-brands fa-github"></i
+									></a>
+									<h2>GITHUB</h2>
+									<p>90%</p>
+									<meter
+										value="9"
+										min="0"
+										max="10"
+										style="width: 100%; height: 20px"
+									>
+										9 out of 10
+									</meter>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-
-
 		</section>
+		<section id="projects" class="projects vh-100">
+			<div id="projects-container" class="about-container">
+				<div class="row">
+					<div
+						data-aos="fade-down-right"
+						data-aos-easing="linear"
+						data-aos-duration="1000"
+						class="col-lg-4 text-light"
+					>
+						<h4 class="heading-projects">Some Of My Work</h4>
+						<h1 #heading-about><span>Projects</span></h1>
+						<hr size="6" width="10%" color="red" />
+					</div>
+					<div class="col-lg-4">hello</div>
+					<div class="col-lg-4">hello</div>
+				</div>
+			</div>
+		</section>
+		<section id="testimonials" class="testimonials vh-100">
+			<div class="about-container">
+				<div class="row">
+					<div
+						data-aos="fade-down-right"
+						data-aos-easing="linear"
+						data-aos-duration="1000"
+						class="col-lg-4"
+					>
+						<h4 class="heading-skills">What People Say About Me</h4>
+						<h1 #heading-about><span>Testimonials</span></h1>
+					</div>
+					<div class="col-lg-4"></div>
+					<div class="col-lg-4"></div>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="contact vh-100">
+			<div class="about-container">
+				<div
+					data-aos="fade-down-right"
+					data-aos-easing="linear"
+					data-aos-duration="1000"
+					class="col-lg-6"
+				>
+					<h4 class="heading-skills">Lets Get In Touch</h4>
+					<h1 #heading-about><span>CONTACT</span></h1>
+					<hr size="6" width="10%" color="red" />
+				</div>
+
+				<div class="col-lg-6"></div>
+			</div>
+		</section>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+		<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+		<!-- stats.js lib -->
+		<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
