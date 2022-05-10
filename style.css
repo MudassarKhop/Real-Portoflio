@@ -228,7 +228,7 @@ span {
 /* skills */
 .headings-skills-div {
 	position: relative;
-	top: -340px;
+	top: -300px;
 	left: -56px;
 }
 .heading-skills {
@@ -237,7 +237,7 @@ span {
 }
 #skills {
 	background-color: black;
-	height: 100vh;
+	height: 835px;
 	padding-top: 380px;
 	overflow: hidden;
 }
