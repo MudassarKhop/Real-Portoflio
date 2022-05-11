@@ -8,10 +8,10 @@ body {
 	font-family: "Poppins", sans-serif;
 }
 #landing {
-	background-image: url(/pexels-matej-1074882.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%;
+	background: linear-gradient(-45deg, #780e0e, #5a0853, #c30f8a, #0d5312);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
 /*icons starting*/
 .icons {
@@ -132,13 +132,19 @@ body {
 }
 /* icons ending */
 /* heading */
-#btn {
-	color: white;
-	margin-left: 120px;
-	background-color: #212431;
+
+.heading-landing-1 {
+	text-align: center;
+	font-size: 53px;
+	font-family: "Roboto Flex", sans-serif;
+	margin: 0;
 }
-#btn:hover {
-	background-color: rgb(23, 92, 138);
+.heading-landing-2 {
+	margin: none;
+	font-family: "Josefin Slab", serif;
+	text-align: center;
+	font-size: 34px;
+	text-shadow: 2px 2px rgb(0, 0, 0);
 }
 .heading-landing {
 	text-align: center;
@@ -170,7 +176,7 @@ span {
 	height: 100%;
 	align-items: center;
 	width: 100%;
-	background-color: black;
+	background: black;
 	border: 3px solid black;
 	padding: 30px;
 }
@@ -208,6 +214,11 @@ span {
 	padding: 15px;
 	font-size: 38px;
 	margin-bottom: 24px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6), 2px 1px 4px rgba(0, 0, 0, 0.3),
+		2px 4px 3px rgba(192, 0, 0, 0.881), 0 0 7px 2px rgba(227, 6, 6, 0.6),
+		inset 0 1px 2px rgba(0, 0, 0, 0.6), inset 2px 1px 4px rgba(0, 0, 0, 0.3),
+		inset 2px 4px 3px rgb(81, 0, 0), inset 0 0 7px 2px rgb(255, 0, 0);
+	animation: flickering 5s infinite;
 }
 #icon3 {
 	margin-top: 40px;
@@ -215,12 +226,22 @@ span {
 	border: 2px solid red;
 	font-size: 38px;
 	margin-bottom: 24px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6), 2px 1px 4px rgba(0, 0, 0, 0.3),
+		2px 4px 3px rgba(192, 0, 0, 0.881), 0 0 7px 2px rgba(227, 6, 6, 0.6),
+		inset 0 1px 2px rgba(0, 0, 0, 0.6), inset 2px 1px 4px rgba(0, 0, 0, 0.3),
+		inset 2px 4px 3px rgb(81, 0, 0), inset 0 0 7px 2px rgb(255, 0, 0);
+	animation: flickering 5s infinite;
 }
 #img-about {
 	border: 3px solid red;
 	margin-bottom: 24px;
 	height: 60%;
 	width: 80%;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6), 2px 1px 4px rgba(0, 0, 0, 0.3),
+		2px 4px 3px rgba(192, 0, 0, 0.881), 0 0 7px 2px rgba(227, 6, 6, 0.6),
+		inset 0 1px 2px rgba(0, 0, 0, 0.6), inset 2px 1px 4px rgba(0, 0, 0, 0.3),
+		inset 2px 4px 3px rgb(81, 0, 0), inset 0 0 7px 2px rgb(255, 0, 0);
+	animation: flickering 5s infinite;
 }
 .about-heading4 {
 	outline: #00bfe7;
@@ -234,11 +255,12 @@ span {
 .heading-skills {
 	color: white;
 	font-family: "Josefin Slab", serif;
+	margin-top: 40px;
 }
 #skills {
 	background-color: black;
 	height: 835px;
-	padding-top: 380px;
+	padding-top: 270px;
 	overflow: hidden;
 }
 .skill-counter {
@@ -252,7 +274,7 @@ span {
 }
 .skill-items {
 	color: white;
-	border: 5px solid red;
+	border: 3px solid red;
 	background-color: black;
 	transform: rotate(45deg);
 	height: 255px;
@@ -266,6 +288,15 @@ span {
 	text-align: center;
 	position: relative;
 	z-index: 1;
+	border-radius: 0px;
+	background: black;
+	border-radius: 4px;
+	text-shadow: 4px 4px #430909, 0 0 10px #901010, inset 1px 1px 1px white;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6), 2px 1px 4px rgba(0, 0, 0, 0.3),
+		2px 4px 3px rgba(192, 0, 0, 0.881), 0 0 7px 2px rgba(227, 6, 6, 0.6),
+		inset 0 1px 2px rgba(0, 0, 0, 0.6), inset 2px 1px 4px rgba(0, 0, 0, 0.3),
+		inset 2px 4px 3px rgb(81, 0, 0), inset 0 0 7px 2px rgb(255, 0, 0);
+	animation: flickering 5s infinite;
 }
 .skill-item-text {
 	padding: 5px;
@@ -273,7 +304,7 @@ span {
 }
 .skills-item-second {
 	color: white;
-	border: 5px solid red;
+	border: 3px solid red;
 	background-color: black;
 	margin-top: -185px;
 	transform: rotate(45deg);
@@ -288,10 +319,17 @@ span {
 	text-align: center;
 	position: relative;
 	z-index: 1;
+	border-radius: 0px;
+	background: black;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6), 2px 1px 4px rgba(0, 0, 0, 0.3),
+		2px 4px 3px rgba(192, 0, 0, 0.881), 0 0 7px 2px rgba(227, 6, 6, 0.6),
+		inset 0 1px 2px rgba(0, 0, 0, 0.6), inset 2px 1px 4px rgba(0, 0, 0, 0.3),
+		inset 2px 4px 3px rgb(81, 0, 0), inset 0 0 7px 2px rgb(255, 0, 0);
+	animation: flickering 5s infinite;
 }
 .skill-item-third {
 	color: white;
-	border: 5px solid red;
+	border: 3px solid red;
 	background-color: black;
 	transform: rotate(45deg);
 	height: 255px;
@@ -304,10 +342,17 @@ span {
 	text-align: center;
 	position: relative;
 	z-index: 1;
+	border-radius: 0px;
+	background: black;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6), 2px 1px 4px rgba(0, 0, 0, 0.3),
+		2px 4px 3px rgba(192, 0, 0, 0.881), 0 0 7px 2px rgba(227, 6, 6, 0.6),
+		inset 0 1px 2px rgba(0, 0, 0, 0.6), inset 2px 1px 4px rgba(0, 0, 0, 0.3),
+		inset 2px 4px 3px rgb(81, 0, 0), inset 0 0 7px 2px rgb(255, 0, 0);
+	animation: flickering 5s infinite;
 }
 .skill-item-four {
 	color: white;
-	border: 5px solid red;
+	border: 3px solid red;
 	background-color: black;
 	margin-top: -185px;
 	transform: rotate(45deg);
@@ -322,9 +367,16 @@ span {
 	text-align: center;
 	position: relative;
 	z-index: 1;
+	border-radius: 0px;
+	background: black;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6), 2px 1px 4px rgba(0, 0, 0, 0.3),
+		2px 4px 3px rgba(192, 0, 0, 0.881), 0 0 7px 2px rgba(227, 6, 6, 0.6),
+		inset 0 1px 2px rgba(0, 0, 0, 0.6), inset 2px 1px 4px rgba(0, 0, 0, 0.3),
+		inset 2px 4px 3px rgb(81, 0, 0), inset 0 0 7px 2px rgb(255, 0, 0);
+	animation: flickering 5s infinite;
 }
 meter::-webkit-meter-optimum-value {
-	background: red;
+	background: green;
 }
 /* projects */
 #projects {
@@ -357,5 +409,105 @@ meter::-webkit-meter-optimum-value {
 	background-attachment: fixed;
 	background-size: 100% 100%;
 	padding: 20px;
-	margin: none;
+	margin: auto;
+}
+.projects-head-1 {
+	text-shadow: 2px 2px rgb(0, 0, 0);
+}
+.staff {
+	position: relative;
+}
+
+.staff-details {
+	background: linear-gradient(
+		to top,
+		rgba(0, 0, 0, 0.7) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	opacity: 0;
+	transition: all 0.3s linear;
+}
+.img-fluid1 {
+	height: 390px;
+	width: 250px;
+	border: 2px solid red;
+}
+.staff:hover .staff-details {
+	opacity: 1;
+}
+#btn1 {
+	outline: 2px solid red;
+	background-color: black;
+	width: 50%;
+}
+#col2 {
+	margin-top: 170px;
+}
+#col3 {
+	margin-top: 120px;
+}
+#col4 {
+	margin-top: 80px;
+}
+@keyframes flickering {
+	0% {
+		border-color: transparent;
+		opacity: 0.2;
+	}
+
+	2% {
+		border-color: #ff0000;
+		opacity: 1;
+	}
+
+	4% {
+		border-color: transparent;
+		opacity: 0.2;
+	}
+
+	8% {
+		border-color: #ff0000;
+		opacity: 1;
+	}
+
+	28% {
+		border-color: #ff0000;
+		opacity: 1;
+	}
+
+	30% {
+		border-color: transparent;
+		opacity: 0.2;
+	}
+
+	36% {
+		border-color: #ff0000;
+		opacity: 1;
+	}
+
+	100% {
+		border-color: #ff0000;
+		opacity: 1;
+	}
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
