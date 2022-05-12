@@ -25,29 +25,82 @@
 		<title>Mudassar Khopatkar</title>
 	</head>
 	<body>
+		<nav id="navbar" class="navbar navbar-expand-lg text-light position-fixed">
+			<div class="container-fluid">
+				<a id="nav-bar-brand" class="navbar-brand text-light" href="#landing"
+					>MK</a
+				>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarText"
+					aria-controls="navbarText"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"
+						><i class="fa-solid fa-bars"></i
+					></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarText">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li id="nav-item" class="nav-item">
+							<a
+								class="nav-link active text-light"
+								aria-current="page"
+								href="#landing"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a id="nav-link" class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a id="nav-link" class="nav-link" href="#skills">Skills</a>
+						</li>
+						<li class="nav-item">
+							<a id="nav-link" class="nav-link" href="#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a id="nav-link" class="nav-link" href="#testimonials"
+								>Testimonials</a
+							>
+						</li>
+						<li class="nav-item">
+							<a id="nav-link" class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+					<div id="icons" class="icons p-3 me-md-4">
+						<a
+							href="https://www.instagram.com/mudathierkop/"
+							target="_blank"
+							class="instagram p-2"
+						>
+							<i id="insta" class="fa-brands fa-instagram"></i>
+						</a>
+						<a
+							href="/Your Repositories.html"
+							target="_blank"
+							class="github p-2"
+						>
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a
+							href="https://www.linkedin.com/in/mudassar-khopatkar-a9854023a/"
+							target="_blank"
+							class="linkdin p-2"
+						>
+							<i class="fa-brands fa-linkedin"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
 		<!-- landing page -->
 		<section id="landing" class="landing vh-100">
-			<ul>
-				<div id="icons" class="icons p-3 me-md-4">
-					<a
-						href="https://www.instagram.com/mudathierkop/"
-						target="_blank"
-						class="instagram p-2"
-					>
-						<i class="fa-brands fa-instagram"></i>
-					</a>
-					<a href="/Your Repositories.html" target="_blank" class="github p-2">
-						<i class="fa-brands fa-github"></i>
-					</a>
-					<a
-						href="https://www.linkedin.com/in/mudassar-khopatkar-a9854023a/"
-						target="_blank"
-						class="linkdin p-2"
-					>
-						<i class="fa-brands fa-linkedin"></i>
-					</a>
-				</div>
-			</ul>
+			<ul></ul>
 			<div
 				class="container position-absolute top-50 start-0 translate-middle-y p-5"
 			>
@@ -247,109 +300,31 @@
 				</div>
 			</div>
 		</section>
-		<section id="projects" class="projects vh-100">
-			<div id="projects-container" class="about-container">
-				<div class="row">
-					<div
-						data-aos="fade-down-right"
-						data-aos-easing="linear"
-						data-aos-duration="1000"
-						class="col-lg-3 text-light"
-					>
-						<h4 class="heading-projects">Some Of My Work</h4>
-						<h1 #heading-about><span>Projects</span></h1>
-						<hr size="6" width="10%" color="red" />
-						<div class="staff">
-							<img class="img-fluid1" src="/calculator.jpg" />
-							<div class="staff-details">
-								<h5 class="projects-head-1">Calculator</h5>
-								<a
-									href="https://gorgeous-profiterole-599685.netlify.app/"
-									target="_blank"
-									id="btn1"
-									class="btn btn-primary"
-									>Live Link</a
-								>
-								<a
-									href="https://github.com/MudassarKhop/applecalculator"
-									target="_blank"
-									id="btn1"
-									class="btn btn-primary"
-									><i class="fa-brands fa-github">GITHUB</i></a
-								>
-							</div>
-						</div>
-					</div>
+		<section id="projects" class="projects ">
+	      <div class="about-container" id="projects-container">
+			  <div class="row">
+				  <div class="col-md-3"><div class="card1">
+  Magic Card
+</div>
 
-					<div id="col2" class="col-md-3">
-						<div class="staff">
-							<img class="img-fluid1" src="/restaurant.jpg" />
-							<div class="staff-details">
-								<h5 class="projects-head-1">Restaurantly</h5>
-								<a
-									href="https://mudassarrestaurant.netlify.app/"
-									target="_blank"
-									id="btn1"
-									class="btn btn-primary"
-									>Live Link</a
-								>
-								<a
-									href="https://github.com/MudassarKhop/restaurant"
-									target="_blank"
-									id="btn1"
-									class="btn btn-primary"
-									>GITHUB</a
-								>
-							</div>
-						</div>
-					</div>
-					<div id="col3" class="col-md-3">
-						<div class="staff">
-							<img class="img-fluid1" src="/mock-portfolio.jpg" />
-							<div class="staff-details">
-								<h5 class="projects-head-1">Mock-Portfolio</h5>
-								<a
-									href="https://mockportfoliomudassarkhop.netlify.app/"
-									target="_blank"
-									id="btn1"
-									class="btn btn-primary"
-									>Live Link</a
-								>
-								<a
-									href="https://github.com/MudassarKhop/Mock-Profile"
-									target="_blank"
-									id="btn1"
-									class="btn btn-primary"
-									>GITHUB</a
-								>
-							</div>
-						</div>
-					</div>
-					<div id="col4" class="col-md-3">
-						<div class="staff">
-							<img class="img-fluid1" src="/holiday-destination.jpg" />
-							<div class="staff-details">
-								<h5 class="projects-head-1">Holiday-Destination</h5>
+<a href="https://mythrillfiction.com/" target="_blank">Mythrill</a></div>
+				  <div class="col-md-3"><div class="card1">
+  Magic Card
+</div>
 
-								<a
-									href="https://majestic-kitsune-931881.netlify.app/"
-									target="_blank"
-									id="btn1"
-									class="btn btn-primary"
-									>Live Link</a
-								>
-								<a
-									href="https://github.com/MudassarKhop/Holiday"
-									target="_blank"
-									id="btn1"
-									class="btn btn-primary"
-									>GITHUB</a
-								>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+<a href="https://mythrillfiction.com/" target="_blank">Mythrill</a></div>
+				  <div class="col-md-3"><div class="card1">
+  Magic Card
+</div>
+
+<a href="https://mythrillfiction.com/" target="_blank">Mythrill</a></div>
+				  <div class="col-md-3"><div class="card1">
+  Magic Card
+</div>
+
+<a href="https://mythrillfiction.com/" target="_blank">Mythrill</a></div>
+			  </div>
+		  </div>
 		</section>
 		<section id="testimonials" class="testimonials vh-100">
 			<div class="about-container">
@@ -381,8 +356,19 @@
 					<h1 #heading-about><span>CONTACT</span></h1>
 					<hr size="6" width="10%" color="red" />
 				</div>
+				
 
-				<div class="col-lg-6"></div>
+				<div class="col-lg-6 bg-danger p-2">
+					<form action="https://formspree.io/f/xoqrkooz" method="post">
+						<P><label for="fname">Full Name:</label</p>
+							<p><input type="text" name="name" value="type..." /></p>
+		<P><label for="fname">Subject:</label</p>
+		<p><input type="subject" name="subject" value="type..." /></p>
+		<P><label for="fname">Message:</label</p>
+		<p><input type="message" name="message" value="hi" style="width: 40%; min-height: 30vh;" /></p>
+		  <input type="submit" value="Submit">					
+					</form>
+				</div>
 			</div>
 		</section>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

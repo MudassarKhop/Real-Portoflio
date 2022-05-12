@@ -1,13 +1,38 @@
 * {
+	margin: 0%;
+	padding: 0%;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
 
 body {
 	background-color: black;
-	font-family: "Poppins", sans-serif;
+	font-family: sans-serif;
+}
+#nav-bar-brand {
+	margin-right: 25%;
+	font-size: x-large;
+}
+#navbar {
+	height: 7%;
+	top: 0;
+	background-color: black;
+	color: white;
+	width: 100%;
+	z-index: 1000;
+}
+#nav-item {
+	font-size: x-large;
+}
+#nav-link {
+	color: white;
+	font-size: x-large;
+}
+#nav-item:hover {
+	color: red;
 }
 #landing {
+	background-color: black;
 	background-image: url(/pexels-matej-1074882.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -178,7 +203,7 @@ span {
 	width: 100%;
 	background: black;
 	border: 3px solid black;
-	padding: 30px;
+	padding: 35px;
 }
 #para-about {
 	margin-top: 50px;
@@ -379,21 +404,108 @@ meter::-webkit-meter-optimum-value {
 	background: green;
 }
 /* projects */
-#projects {
-	background-image: url(/pexels-gradienta-7130560.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%;
-	padding: 20px;
-	margin: none;
+@property --rotate {
+	syntax: "<angle>";
+	initial-value: 132deg;
+	inherits: false;
 }
-#projects-container {
-	height: 100%;
+
+:root {
+	--card-height: 65vh;
+	--card-width: calc(var(--card-height) / 1.5);
+}
+
+.projects {
+	min-height: 100vh;
+	background: #212534;
+	display: flex;
 	align-items: center;
-	background-color: black;
-	border: 3px solid black;
-	padding: 30px;
+	flex-direction: column;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	box-sizing: border-box;
 }
+
+.card1 {
+	background: #191c29;
+	width: var(--card-width);
+	height: var(--card-height);
+	padding: 3px;
+	position: relative;
+	border-radius: 6px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	font-size: 1.5em;
+	color: rgb(88 199 250 / 0%);
+	cursor: pointer;
+	font-family: cursive;
+}
+
+.card1:hover {
+	color: rgb(88 199 250 / 100%);
+	transition: color 1s;
+}
+.card1:hover:before,
+.card1:hover:after {
+	animation: none;
+	opacity: 0;
+}
+
+.card1::before {
+	content: "";
+	width: 104%;
+	height: 102%;
+	border-radius: 8px;
+	box-shadow: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+	position: absolute;
+	z-index: -1;
+	top: -1%;
+	left: -2%;
+	animation: spin 2.5s linear infinite;
+}
+
+.card1::after {
+	position: absolute;
+	content: "";
+	top: calc(var(--card-height) / 6);
+	left: 0;
+	right: 0;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	transform: scale(0.8);
+	filter: blur(calc(var(--card-height) / 6));
+	background-image: linear-gradient(
+		var(--rotate),
+		#5ddcff,
+		#3c67e3 43%,
+		#4e00c2
+	);
+	opacity: 1;
+	transition: opacity 0.5s;
+	animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		--rotate: 0deg;
+	}
+	100% {
+		--rotate: 360deg;
+	}
+}
+
+a {
+	color: #212534;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-top: 2rem;
+}
+/* projects */
 .heading-projects {
 	font-family: "Josefin Slab", serif;
 }
@@ -402,6 +514,7 @@ meter::-webkit-meter-optimum-value {
 	background-color: black;
 	padding: 30px;
 }
+
 /* contact */
 #contact {
 	background-image: url(/pexels-gradienta-6985047.jpg);
@@ -452,13 +565,16 @@ meter::-webkit-meter-optimum-value {
 }
 #col2 {
 	margin-top: 170px;
+	margin-left: 40%;
 }
 #col3 {
 	margin-top: 120px;
+	right: 40%;
 }
 #col4 {
 	margin-top: 80px;
 }
+
 @keyframes flickering {
 	0% {
 		border-color: transparent;
@@ -500,14 +616,9 @@ meter::-webkit-meter-optimum-value {
 		opacity: 1;
 	}
 }
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
+
+@media only screen and (max-width: 753.6px) {
+	#insta {
+		display: none;
 	}
 }
