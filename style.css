@@ -699,7 +699,12 @@ meter::-webkit-meter-optimum-value {
 	padding-bottom: 1px;
 	font-family: "Kanit", sans-serif;
 }
-
+footer {
+	text-align: center;
+	padding: 3px;
+	background-color: #4356d6;
+	color: white;
+  }
 /* contact */
 @keyframes rotate360 {
 	from {
