@@ -1,387 +1,560 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,100&family=Roboto+Flex:opsz,wght@8..144,500&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="style.css" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-			crossorigin="anonymous"
-		/>
-		<script
-			src="https://kit.fontawesome.com/30f14fa587.js"
-			crossorigin="anonymous"
-		></script>
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-		<title>Mudassar Khopatkar</title>
-	</head>
-	<body>
-		<nav id="navbar" class="navbar navbar-expand-lg text-light position-fixed">
-			<div class="container-fluid">
-				<a id="nav-bar-brand" class="navbar-brand text-light" href="#landing"
-					>MK</a
-				>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarText"
-					aria-controls="navbarText"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"
-						><i class="fa-solid fa-bars"></i
-					></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarText">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li id="nav-item" class="nav-item">
-							<a
-								class="nav-link active text-light"
-								aria-current="page"
-								href="#landing"
-								>Home</a
-							>
-						</li>
-						<li class="nav-item">
-							<a id="nav-link" class="nav-link" href="#about">About</a>
-						</li>
-						<li class="nav-item">
-							<a id="nav-link" class="nav-link" href="#skills">Skills</a>
-						</li>
-						<li class="nav-item">
-							<a id="nav-link" class="nav-link" href="#projects">Projects</a>
-						</li>
-						<li class="nav-item">
-							<a id="nav-link" class="nav-link" href="#testimonials"
-								>Testimonials</a
-							>
-						</li>
-						<li class="nav-item">
-							<a id="nav-link" class="nav-link" href="#contact">Contact</a>
-						</li>
-					</ul>
-					<div id="icons" class="icons p-3 me-md-4">
-						<a
-							href="https://www.instagram.com/mudathierkop/"
-							target="_blank"
-							class="instagram p-2"
-						>
-							<i id="insta" class="fa-brands fa-instagram"></i>
-						</a>
-						<a
-							href="/Your Repositories.html"
-							target="_blank"
-							class="github p-2"
-						>
-							<i class="fa-brands fa-github"></i>
-						</a>
-						<a
-							href="https://www.linkedin.com/in/mudassar-khopatkar-a9854023a/"
-							target="_blank"
-							class="linkdin p-2"
-						>
-							<i class="fa-brands fa-linkedin"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+    src="https://kit.fontawesome.com/30f14fa587.js"
+    crossorigin="anonymous"
+></script>
+    <title>Mudassar Khopatkar</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#landing">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li id="#nav-item " class="nav-item">
+            <a class="nav-link active" aria-current="page" href="landing">Home</a>
+          </li>
+          <li id="#nav-item " class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li id="#nav-item " class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li id="#nav-item " class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li  id="#nav-item "class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li id="#nav-item " class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+     <section id="landing" class="landing">
+        <div class="row">
+            <div id="heading-div" class="col-lg-8 col-md-4 col-sm-2 text-center position-absolute top-50 start-0 translate-middle">
+               <h1 id="heading1" >Mudassar Khopatkar</h1>
+               <h2 id="heading2" ><i>-Aspiring Web Developer-</i></h2>
+               <div id="icons" class="icons me-md-4">
+                <a id="instagram"
+                    href="https://www.instagram.com/mudathierkop/"
+                    target="_blank"
+                    class="instagram"
+                >
+                    <i id="insta" class="fa-brands fa-instagram"></i>
+                </a>
+                <a id="github"
+                    href="https://github.com/MudassarKhop"
+                    target="_blank"
+                    class="github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+               <a id="linkdin"
+                 href="https://www.linkedin.com/in/mudassar-khopatkar-a9854023a/"
+                 target="_blank"
+                 class="github">
+                 <i class="fa-brands fa-linkedin"></i>
+               </a>
+           </div>
+       </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container spad">
+          <h4 id="heading2">-past, present-</h4>
+          <h1 id="heading1">ABOUT ME</h1>
+            <div class="row">
+                <div
+                    data-aos="fade-down-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000"
+                    class="col-md-4 text-light width-30%"
+                >
+                    <p id="para-about">
+                      I'm an ambitious, focused and determined individual. I'm also very competitive. I always look for ways to challenge myself. I'm very patient with others and work well in a team environment. I have a very spontaneous personality, which makes me think the adventurous characteristic applies to me. I have always been fascinated with technology, and I hope to become a web or software developer.                      </p>
 
-		<!-- landing page -->
-		<section id="landing" class="landing vh-100">
-			<ul></ul>
-			<div
-				class="container position-absolute top-50 start-0 translate-middle-y p-5"
-			>
-				<div class="row">
-					<div
-						data-aos="fade-down"
-						data-aos-easing="linear"
-						data-aos-duration="1500"
-						class="col-lg-8"
-					>
-						<div id="heading" class="heading text-light">
-							<h3 class="heading-landing2 m-0">
-								<i>Welcome, I Am</i>
-							</h3>
-							<h1 class="heading-landing-1"><i>Mudassar Khopatkar</i></h1>
-							<h3 class="heading-landing-2">
-								An Aspiring <span>Web-Developer</span>
-							</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- landing page ending -->
-		<section id="about" class="about vh-80">
-			<div class="about-container">
-				<div class="row">
-					<div
-						data-aos="fade-down-right"
-						data-aos-easing="linear"
-						data-aos-duration="1000"
-						class="col-md-4 text-light width-30%"
-					>
-						<h4 class="heading-about2">past, present</h4>
-						<h1 #heading-about><span>ABOUT ME</span></h1>
-						<hr size="6" width="10%" color="red" />
-						<p id="para-about">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-							nulla assumenda adipisci modi consectetur mollitia recusandae
-							soluta eligendi molestias quia illum odit aspernatur voluptate,
-							cupiditate sequi repellendus veritatis asperiores tempore!
-						</p>
-						<a href="#skills"
-							><button
-								data-aos="fade-down-right"
-								data-aos-easing="linear"
-								data-aos-duration="1000"
-								type="button"
-								id="btn2"
-								class="btn btn-lg bg-transparent"
-							>
-								LEARN MORE
-							</button></a
-						>
-					</div>
-					<div
-						data-aos="fade-down"
-						data-aos-easing="linear"
-						data-aos-duration="1000"
-						class="col-md-4 text-light width-30%"
-					>
-						<i id="icon2" class="fa-solid fa-briefcase"></i>
+                      <p id="para-about">In 2020 my friends from university asked me to help them build a basic HTML and CSS website for a project. I spent the night on YouTube learning HTML and CSS and built a decent website for them, and ever since then, I've realised that I'm passionate about this kind of work.  I was unable to attend university after I matriculated because I could not get the funding, and then I applied to Life Choices Academy. It's a blessing for me to pursue what I love rather than go to university and do something I'd not enjoy.
+                    </p>
+                    <a href="#skills"
+                        ><button
+                            data-aos="fade-down-right"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000"
+                            type="button"
+                            id="btn2"
+                            class="btn btn-lg bg-transparent"
+                        >
+                            LEARN MORE
+                        </button></a
+                    >
+                </div>
+                <div
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000"
+                    class="col-md-4 text-light width-30%"
+                >
+                    <i id="icon2" class="fa-solid fa-briefcase"></i>
 
-						<h3 class="about-heading3">Work Experience</h3>
-						<p class="para-about2">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni
-							consequuntur nam quidem perspiciatis et error nihil autem cum
-							dolorem est, vero sapiente odit adipisci quos pariatur suscipit
-							minus. Dicta.
-						</p>
-						<i id="icon3" class="fa-solid fa-graduation-cap"></i>
-						<h3 class="about-heading4">Education</h3>
-						<p class="para-about2">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni
-							consequuntur nam quidem perspiciatis et error nihil autem cum
-							dolorem est, vero sapiente odit adipisci quos pariatur suscipit
-							minus. Dicta.
-						</p>
-					</div>
-					<div class="col-md-4 text-light width-30%">
-						<img
-							id="img-about"
-							class="d-flex"
-							src="/IMG_20211207_005800_165.webp"
-							alt=""
-						/>
-						<h3 class="about-heading4">Mudassar Khopatkar</h3>
-						<hr size="6" width="10%" color="red" />
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="skills" class="skills">
-			<div class="container">
-				<div class="headings-skills-div position-relative">
-					<h4 class="heading-skills">My Ability</h4>
-					<h1 #heading-about><span>SKILLS</span></h1>
-					<hr size="6" width="10%" color="red" />
-				</div>
-				<div class="skill-counter">
-					<div class="row-skill">
-						<div
-							data-aos="flip-left"
-							data-aos-easing="linear"
-							data-aos-duration="1500"
-							class="col-lg-3 col-md-6 col-sm-6"
-						>
-							<div class="skill-items">
-								<div class="skill-item-text">
-									<a href="#" class="html"
-										><i class="fa-brands fa-html5"></i
-									></a>
-									<h2>HTML</h2>
-									<p>80%</p>
-									<meter
-										value="8"
-										min="0"
-										max="10"
-										style="width: 100%; height: 20px"
-									>
-										8 out of 10
-									</meter>
+                    <h3 class="about-heading3">Work Experience</h3>
+                    <p class="para-about2"><i id="right-arrow" class="fa-solid fa-chevron-right"></i> Voluntary Work at Rylands High School (2019 July)</p>
+                    <p class="para-about2"><i id="right-arrow" class="fa-solid fa-chevron-right"></i> Cattering at Ashuras Cattering (2019 Dec)</p>
+                    <p class="para-about2"><i id="right-arrow" class="fa-solid fa-chevron-right"></i> Waiter at Mariams Kitchen (2021/2022 Dec/jan)</p>
+                    <i id="icon3" class="fa-solid fa-graduation-cap"></i>
+                    <h3 class="about-heading4">Education</h3>
+                    
+                    <p class="para-about2">
+                      <i id="right-arrow" class="fa-solid fa-chevron-right"></i> Rylands Primary School</p>
+                     <p class="para-about2"><i id="right-arrow" class="fa-solid fa-chevron-right"></i> Rylands High School</p> 
+                      <p class="para-about2"><i id="right-arrow" class="fa-solid fa-chevron-right"></i> Life Choices Coding Academy (currently)
+                    </p>
+
+                </div>
+                <div class="col-md-4 text-light width-30%">
+                    <img
+                        id="img-about"
+                        class="d-flex"
+                        src="Mudassar (4).JPG"
+                        alt=""
+                    />
+                    <h3 class="about-heading4">Mudassar Khopatkar</h3> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="Skills">
+        <div id="skills-container" class="container spad">
+            <div class="row">
+                <div class="col-lg-3">
+                    
+            <h4 id="heading2">-my abilities-</h4>
+            <h1 id="heading1">SKILLS</h1>
+                </div>
+                <div class="row">
+
+                    <div
+                    data-aos="flip-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                    class="col-lg-3 col-md-6 col-sm-6"
+                >
+                    <div class="skill-items">
+                        <div class="skill-item-text">
+                            <a href="#" class="html"
+                                ><i class="fa-brands fa-html5"></i
+                            ></a>
+                            <h2>HTML</h2>
+                            <p>80%</p>
+                            <meter
+                                value="8"
+                                min="0"
+                                max="10"
+                                style="width: 100%; height: 20px"
+                            >
+                                8 out of 10
+                            </meter>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    data-aos="flip-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                    class="col-lg-3 col-md-6 col-sm-6"
+                >
+                    <div class="skills-item-second">
+                        <div class="skill-item-text">
+                            <a href="#" class="css"><i class="fa-brands fa-css3"></i></a>
+                            <h2>CSS</h2>
+                            <p>80%</p>
+                            <meter
+                                value="8"
+                                min="0"
+                                max="10"
+                                style="width: 100%; height: 20px"
+                            >
+                                8 out of 10
+                            </meter>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    data-aos="flip-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                    class="col-lg-3 col-md-6 col-sm-6"
+                >
+                    <div class="skill-item-third">
+                        <div class="skill-item-text">
+                            <a href="#" class="bootstrap"
+                                ><i class="fa-brands fa-bootstrap"></i
+                            ></a>
+                            <h2>Bootstrap</h2>
+                            <p>70%</p>
+                            <meter
+                                value="7"
+                                min="0"
+                                max="10"
+                                style="width: 100%; height: 20px"
+                            >
+                                7 out of 10
+                            </meter>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    data-aos="flip-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                    class="col-lg-3 col-md-6 col-sm-6"
+                >
+                    <div class="skill-item-four">
+                        <div class="skill-item-text">
+                            <a href="#" class="github"
+                                ><i class="fa-brands fa-github"></i
+                            ></a>
+                            <h2>GITHUB</h2>
+                            <p>90%</p>
+                            <meter
+                                value="9"
+                                min="0"
+                                max="10"
+                                style="width: 100%; height: 20px"
+                            >
+                                9 out of 10
+                            </meter>
+                        </div>
+                    </div>
+                </div>
+    
+      
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects ">
+      <div class="container spad">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="project-heading">
+              <h4 id="heading2">-some of my work-</h4>
+              <h1 id="heading1">PROJECTS</h1>
+            </div>
+          </div>
+        </div>
+        <div id="row-projects" class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+            <div class="project-item pi-1 set-bg" data-setbg="restaurant.jpg" style="background-image: url(/restaurant.jpg);" >
+              <div class="staff">
+                <div class="shadow-effect">
+                  <img class="img-responsive" src="/restaurant.jpg" alt="">
+                  <div class="project-details">
+                    <h2 id="heading-projects">Restaurantly</h2> 
+                    <a href="https://github.com/MudassarKhop/restaurant" target="_blank" button
+                    data-aos="fade-down-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000"
+                    type="button"
+                    id="btn2"
+                    class="btn btn-lg bg-transparent">
+                    GITHUB
+                </button></a>
+                <a href="https://mudassarrestaurant.netlify.app" target="_blank" button
+                data-aos="fade-down-right"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+                type="button"
+                id="btn2"
+                class="btn btn-lg bg-transparent">
+                Live Link
+                  </button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+            <div class="project-item pi-2 set-bg" data-setbg="restaurant.jpg" style="background-image: url(/calculator.jpg);" >
+              <div class="staff">
+                <div class="shadow-effect">
+                  <img class="img-responsive" src="/calculator.jpg" alt="">
+                  <div class="project-details">
+                    <h2 id="heading-projects">Calculator</h2>
+                   
+                    <a href="https://github.com/MudassarKhop/applecalculator" target="_blank" button
+                    data-aos="fade-down-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000"
+                    type="button"
+                    id="btn2"
+                    class="btn btn-lg bg-transparent">
+                    GITHUB
+                </button></a>
+                <a href="https://gorgeous-profiterole-599685.netlify.app" target="_blank" button
+                data-aos="fade-down-right"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+                type="button"
+                id="btn2"
+                class="btn btn-lg bg-transparent">
+                Live Link
+                  </button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+            <div class="project-item pi-3 set-bg" data-setbg="restaurant.jpg" style="background-image: url(/mock-portfolio.jpg);" >
+              <div class="staff">
+                <div class="shadow-effect">
+                  <img class="img-responsive" src="/mock-portfolio.jpg" alt="">
+                  <div class="project-details">
+                    <h2 id="heading-projects">Mock-Portfolio</h2>
+                   
+                    <a href="https://github.com/MudassarKhop/Mock-Profile" target="_blank" button
+                    data-aos="fade-down-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000"
+                    type="button"
+                    id="btn2"
+                    class="btn btn-lg bg-transparent">
+                    GITHUB
+                </button></a>
+                <a href="https://mockportfoliomudassarkhop.netlify.app" target="_blank" button
+                data-aos="fade-down-right"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+                type="button"
+                id="btn2"
+                class="btn btn-lg bg-transparent">
+                Live Link
+                  </button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+            <div class="project-item pi-4 set-bg" data-setbg="restaurant.jpg" style="background-image: url(/holiday-destination.jpg);" >
+              <div class="staff">
+                <div class="shadow-effect">
+                  <img class="img-responsive" src="/holiday-destination.jpg" alt="">
+                  <div class="project-details">
+                    <h2 id="heading-projects">Holiday-Destination</h2>
+                   
+                    <a href="https://github.com/MudassarKhop/Holiday" button
+                    data-aos="fade-down-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000"
+                    type="button"
+                    id="btn2"
+                    class="btn btn-lg bg-transparent">
+                    GITHUB
+                </button></a>
+                <a href="https://majestic-kitsune-931881.netlify.app" target="_blank" button
+                data-aos="fade-down-right"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+                type="button"
+                id="btn2"
+                class="btn btn-lg bg-transparent">
+                Live Link
+                  </button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testimonials spad">
+	<div class="container">
+    <h4 id="heading2">-what people say about me-</h4>
+    <h1 id="heading1">TESTIMONIALS</h1>
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="customers-testimonials" class="owl-carousel">
+
+            <!--TESTIMONIAL 1 -->
+            <div class="staff">
+              <div class="shadow-effect">
+                <img class="img-responsive" src="/Carla (1).JPG" alt="">
+                <div class="staff-details">
+                  <h2 id="test-head1" >CARLA LAWRENCE</h2>
+                    <h3 id="test-head2">PEER</h3>
+									<p id="para-about">Mudassar Khopatkar is a highly competent and  focused web developer. His friendly disposition draws his colleagues to him and he is impressionable to everyone he comes in contact with.</p>
 								</div>
-							</div>
-						</div>
-						<div
-							data-aos="flip-right"
-							data-aos-easing="linear"
-							data-aos-duration="1500"
-							class="col-lg-3 col-md-6 col-sm-6"
-						>
-							<div class="skills-item-second">
-								<div class="skill-item-text">
-									<a href="#" class="css"><i class="fa-brands fa-css3"></i></a>
-									<h2>CSS</h2>
-									<p>80%</p>
-									<meter
-										value="8"
-										min="0"
-										max="10"
-										style="width: 100%; height: 20px"
-									>
-										8 out of 10
-									</meter>
+              </div>
+            </div>
+            <!--END OF TESTIMONIAL 1 -->
+            <!--TESTIMONIAL 2 -->
+            <div class="staff">
+              <div class="shadow-effect">
+                <img class="img-responsive" src="/Zoe (1).JPG" alt="">
+                <div class="staff-details">
+									<h2 id="test-head1">Zoe</h2>
+                    <h3 id="test-head2">PEER</h3>
+									<p id="para-about">Mudassar khopatkar is a dedicated person , he strives to reach his goals and will put twice the amount of work in to achieve everything . He is a extremely talented person with many skills .</p>
 								</div>
-							</div>
-						</div>
-						<div
-							data-aos="flip-left"
-							data-aos-easing="linear"
-							data-aos-duration="1500"
-							class="col-lg-3 col-md-6 col-sm-6"
-						>
-							<div class="skill-item-third">
-								<div class="skill-item-text">
-									<a href="#" class="bootstrap"
-										><i class="fa-brands fa-bootstrap"></i
-									></a>
-									<h2>Bootstrap</h2>
-									<p>70%</p>
-									<meter
-										value="7"
-										min="0"
-										max="10"
-										style="width: 100%; height: 20px"
-									>
-										7 out of 10
-									</meter>
+              </div>
+            </div>
+            <!--END OF TESTIMONIAL 2 -->
+            <!--TESTIMONIAL 3 -->
+            <div class="staff">
+              <div class="shadow-effect">
+                <img class="img-responsive" src="/Jesse (2).JPG" alt="">
+                <div class="staff-details">
+                  <h2 id="test-head1">Jesse Spencer</h2>
+                  <h3 id="test-head2">PEER</h3>
+                <p id="para-about">It is my great pleasure to have worked with Mudassar Khopatkar as he is a good team worker.He can collaborate and communicate with others on their ideas.</p>      
 								</div>
-							</div>
-						</div>
-						<div
-							data-aos="flip-right"
-							data-aos-easing="linear"
-							data-aos-duration="1500"
-							class="col-lg-3 col-md-6 col-sm-6"
-						>
-							<div class="skill-item-four">
-								<div class="skill-item-text">
-									<a href="#" class="github"
-										><i class="fa-brands fa-github"></i
-									></a>
-									<h2>GITHUB</h2>
-									<p>90%</p>
-									<meter
-										value="9"
-										min="0"
-										max="10"
-										style="width: 100%; height: 20px"
-									>
-										9 out of 10
-									</meter>
+              </div>
+            </div>
+            <!--END OF TESTIMONIAL 3 -->
+            <!--TESTIMONIAL 4 -->
+            <div class="staff">
+              <div class="shadow-effect">
+                <img class="img-responsive" src="/Tshimologo (2).JPG" alt="">
+                <div class="staff-details">
+                  <h2 id="test-head1">Tshimologo King</h2>
+                  <h3 id="test-head2">PEER</h3>
+                <p id="para-about">I am profoundly impressed with his intense focus and commitment. His enthusiasm towards his work is remarkable. I am convinced that he can make a more valuable contribution for future endeavours.</p>
+              
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="projects" class="projects ">
-	      <div class="about-container" id="projects-container">
-			  <div class="row">
-				  <div class="col-md-3"><div class="card1">
-  Magic Card
-</div>
+              </div>
+            </div>
+            <!--END OF TESTIMONIAL 4 -->
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- END OF TESTIMONIALS -->
+<section id="contact" class="contact">
+    <div class="container spad">
+        <div class="row">
+                <div class="col-lg-3">
+                    <h4 id="heading2">-lets get in touch-</h4>
+                    <h1 id="heading1">CONTACT ME</h1>
+                </div>
+                <div class="container ms-5 formbox">
+                    <div class="row">
+                        <div id="col-6" class="col-md-8 ms-2 justify-content-center bg-dark ">
+                            <div class="contact-container p-5">
+                              <div>
 
-<a href="https://mythrillfiction.com/" target="_blank">Mythrill</a></div>
-				  <div class="col-md-3"><div class="card1">
-  Magic Card
-</div>
+                                 <p class="p-map"><a href="http//www.gmail.com" target="_blank" class="email"
+                                  ><i class="fa-solid fa-at"></i></a> khopatkarmudassar@gmail.com</p>
+                              </div>
+                              <div>
 
-<a href="https://mythrillfiction.com/" target="_blank">Mythrill</a></div>
-				  <div class="col-md-3"><div class="card1">
-  Magic Card
-</div>
+                                <p class="p-map"> <a href="http//google.maps.com" target="_blank" class="location"
+                                  ><i class="fa-solid fa-location-dot"></i></a> Life Choices</p>
+                              </div>
+                              <div>
 
-<a href="https://mythrillfiction.com/" target="_blank">Mythrill</a></div>
-				  <div class="col-md-3"><div class="card1">
-  Magic Card
-</div>
+                                <p class="p-map"><a href="http//www.cellc.co.za" target="_blank" class="Phone"
+                                  ><i class="fa-solid fa-phone"></i></a> 0840513506</p>
+                              </div>
+                              <div class="col-lg-4 col-md-2 col-sm-2">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.267419712508!2d18.49050455126687!3d-33.98566428052904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc433b9cea5635%3A0x918c4272e1a013b6!2s618%20Doncaster%20Rd%2C%20Lansdowne%2C%20Cape%20Town%2C%207708!5e0!3m2!1sen!2sza!4v1652560465061!5m2!1sen!2sza" width="560px" height="40%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+  <div class="form">
+    <form class="register-form" action="https://formspree.io/f/mgedrzro" method="post">
+      <input type="text" placeholder="Full Names"/>
+      <input type="password" placeholder="Email Address"/>
+            <input type="password" placeholder="Subject"/>
+    </form>
+    <form class="login-form" action="https://formspree.io/f/mgedrzro" method="post">
+      <input type="text" placeholder="Full Name"/>
+      <input type="text" placeholder="Email"/>
+            <input type="text" placeholder="Phone Number"/>
+            <textarea name="" id="submit-sec" class="mb-2 form-control" placeholder="Message"></textarea>
 
-<a href="https://mythrillfiction.com/" target="_blank">Mythrill</a></div>
-			  </div>
-		  </div>
-		</section>
-		<section id="testimonials" class="testimonials vh-100">
-			<div class="about-container">
-				<div class="row">
-					<div
-						data-aos="fade-down-right"
-						data-aos-easing="linear"
-						data-aos-duration="1000"
-						class="col-lg-4"
-					>
-						<h4 class="heading-skills">What People Say About Me</h4>
-						<h1 #heading-about><span>Testimonials</span></h1>
-						<hr size="6" width="10%" color="red" />
-					</div>
-					<div class="col-lg-4"></div>
-					<div class="col-lg-4"></div>
-				</div>
-			</div>
-		</section>
-		<section id="contact" class="contact vh-100">
-			<div class="about-container">
-				<div
-					data-aos="fade-down-right"
-					data-aos-easing="linear"
-					data-aos-duration="1000"
-					class="col-lg-6"
-				>
-					<h4 class="heading-skills">Lets Get In Touch</h4>
-					<h1 #heading-about><span>CONTACT</span></h1>
-					<hr size="6" width="10%" color="red" />
-				</div>
-				
+      <button type="submit">SUBMIT</button>
+      <p class="message">want more? <a href="#http//.www.lifechoices.com" target="_blank">lifechoices.com</a></p>
+    </form>
+  </div>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="col-lg-6 bg-danger p-2">
-					<form action="https://formspree.io/f/xoqrkooz" method="post">
-						<P><label for="fname">Full Name:</label</p>
-							<p><input type="text" name="name" value="type..." /></p>
-		<P><label for="fname">Subject:</label</p>
-		<p><input type="subject" name="subject" value="type..." /></p>
-		<P><label for="fname">Message:</label</p>
-		<p><input type="message" name="message" value="hi" style="width: 40%; min-height: 30vh;" /></p>
-		  <input type="submit" value="Submit">					
-					</form>
-				</div>
-			</div>
-		</section>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script>
-			AOS.init();
-		</script>
-		<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-		<!-- stats.js lib -->
-		<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-			crossorigin="anonymous"
-		></script>
-	</body>
+            </div>
+        </div>
+    </section>
+     <script>
+  jQuery(document).ready(function($) {
+"use strict";
+$('#customers-testimonials').owlCarousel( {
+		loop: true,
+		center: true,
+		items: 3,
+		margin: 30,
+		autoplay: true,
+		dots:true,
+    nav:true,
+		autoplayTimeout: 8500,
+		smartSpeed: 450,
+  	navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		responsive: {
+			0: {
+				items: 1
+			},
+			768: {
+				items: 2
+			},
+			1170: {
+				items: 3
+			}
+		}
+	});
+});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
 </html>
